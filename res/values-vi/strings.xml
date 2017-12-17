@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Thanh trạng thái</string>
+    <string name="status_bar_clear_all_button">Xóa</string>
+    <string name="status_bar_no_notifications_title">Không có thông báo</string>
+    <string name="status_bar_ongoing_events_title">Đi</string>
+    <string name="status_bar_latest_events_title">Thông báo</string>
+    <string name="battery_low_title">Hãy cắm bộ sạc</string>
+    <string name="battery_low_subtitle">Pin đang yếu dần:</string>
+    <string name="battery_low_percent_format">%d%% còn lại hoặc thấp hơn</string>
+    <string name="battery_low_why">Dùng Pin</string>
+    <string name="usb_accessory_permission_prompt">Allow the application %1$s to access the USB accessory?</string>
+    <string name="usb_device_confirm_prompt">Open %1$s when this USB device is connected?</string>
+    <string name="usb_accessory_confirm_prompt">Open %1$s when this USB accessory is connected?</string>
+    <string name="usb_accessory_uri_prompt">No installed applications work with this USB accessory. Learn more about this accessory at %1$s</string>
+    <string name="title_usb_accessory">Phụ kiện USB</string>
+    <string name="label_view">Xem</string>
+    <string name="always_use_accessory">Sử dụng theo mặc định cho phụ kiện USB này</string>
+    <string name="quickpanel_wifi_text">Wi-Fi</string>
+    <string name="quickpanel_bluetooth_text">B/T</string>
+    <string name="quickpanel_gps_text">GPS</string>
+    <string name="quickpanel_sound_text">Âm thanh</string>
+    <string name="quickpanel_sound_vibration_text">"Âm thanh
+Rung"</string>
+    <string name="quickpanel_silent_text">Yên lặng</string>
+    <string name="quickpanel_vibration_text">Rung</string>
+    <string name="quickpanel_rotation_text">Tự động xoay</string>
+    <string name="quickpanel_error_text">Lỗi</string>
+    <string name="quickpanel_dc_text">Dữ liệu</string>
+    <string name="capital_on">Bật</string>
+    <string name="capital_off">Tắt</string>
+    <string name="lowbattery">Pin yếu. Vui lòng sạc để tiếp tục sử dụng</string>
+    <string name="critical_lowbattery">Pin rất yếu. Vui lòng gắn sạc để tiếp tục sử dụng</string>
+    <string name="dischargetitle">T.tin</string>
+    <string name="dischargebattery">Việc nạp đã dừng. Nhiệt độ pin quá cao hoặc quá thấp</string>
+    <string name="fullchargetitle">T.tin</string>
+    <string name="fullchargebattery">"Pin đầy. 
+Xin ngừng sạc"</string>
+</resources>

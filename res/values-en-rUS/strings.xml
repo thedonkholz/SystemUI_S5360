@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Status bar</string>
+    <string name="status_bar_clear_all_button">Clear</string>
+    <string name="status_bar_no_notifications_title">No notifications</string>
+    <string name="status_bar_ongoing_events_title">Ongoing</string>
+    <string name="status_bar_latest_events_title">Notifications</string>
+    <string name="battery_low_title">Please connect charger</string>
+    <string name="battery_low_subtitle">The battery is getting low:</string>
+    <string name="battery_low_percent_format">%d%% or less remaining</string>
+    <string name="battery_low_why">Battery use</string>
+    <string name="usb_accessory_permission_prompt">Allow the application %1$s to access the USB accessory?</string>
+    <string name="usb_device_confirm_prompt">Open %1$s when this USB device is connected?</string>
+    <string name="usb_accessory_confirm_prompt">Open %1$s when this USB accessory is connected?</string>
+    <string name="usb_accessory_uri_prompt">No installed applications work with this USB accessory. Learn more about this accessory at %1$s</string>
+    <string name="title_usb_accessory">USB accessory</string>
+    <string name="label_view">View</string>
+    <string name="always_use_accessory">Use by default for this USB accessory</string>
+    <string name="quickpanel_wifi_text">Wi-Fi</string>
+    <string name="quickpanel_bluetooth_text">B/T</string>
+    <string name="quickpanel_gps_text">GPS</string>
+    <string name="quickpanel_sound_text">Sound</string>
+    <string name="quickpanel_sound_vibration_text">"Sound
+Vibration"</string>
+    <string name="quickpanel_silent_text">Silent</string>
+    <string name="quickpanel_vibration_text">Vibration</string>
+    <string name="quickpanel_rotation_text">Auto rotation</string>
+    <string name="quickpanel_error_text">Error</string>
+    <string name="quickpanel_dc_text">Data</string>
+    <string name="capital_on">On</string>
+    <string name="capital_off">Off</string>
+    <string name="lowbattery">Battery low. Recharge phone soon to keep using</string>
+    <string name="critical_lowbattery">Battery critically low. Plug phone in now to keep using</string>
+    <string name="dischargetitle">Info</string>
+    <string name="dischargebattery">Charging paused. Battery temperature too high or too low</string>
+    <string name="fullchargetitle">Info</string>
+    <string name="fullchargebattery">"Battery fully charged.
+Unplug charger"</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">แถบ​สถานะ</string>
+    <string name="status_bar_clear_all_button">ลบ</string>
+    <string name="status_bar_no_notifications_title">ไม่​มี​การ​แจ้ง​เตือน</string>
+    <string name="status_bar_ongoing_events_title">กำลัง​ทำ​งาน</string>
+    <string name="status_bar_latest_events_title">การ​แจ้ง​เตือน</string>
+    <string name="battery_low_title">กรุณา​ต่อ​เครื่อง​ชาร์จ</string>
+    <string name="battery_low_subtitle">แบตเตอรี่​เหลือ​น้อย:</string>
+    <string name="battery_low_percent_format">เหลือ​อยู่ %d%% ​หรือ​น้อย​กว่า​นั้น</string>
+    <string name="battery_low_why">ใช้​แบ​ต</string>
+    <string name="usb_accessory_permission_prompt">Allow the application %1$s to access the USB accessory?</string>
+    <string name="usb_device_confirm_prompt">Open %1$s when this USB device is connected?</string>
+    <string name="usb_accessory_confirm_prompt">Open %1$s when this USB accessory is connected?</string>
+    <string name="usb_accessory_uri_prompt">No installed applications work with this USB accessory. Learn more about this accessory at %1$s</string>
+    <string name="title_usb_accessory">อุปกรณ์เสริม USB</string>
+    <string name="label_view">ดู</string>
+    <string name="always_use_accessory">ใช้ค่าเริ่มต้นสำหรับอุปกรณ์เสริม USB นี้</string>
+    <string name="quickpanel_wifi_text">Wi-Fi</string>
+    <string name="quickpanel_bluetooth_text">บลูทูธ</string>
+    <string name="quickpanel_gps_text">GPS</string>
+    <string name="quickpanel_sound_text">เสียง</string>
+    <string name="quickpanel_sound_vibration_text">"เสียง
+​ระบบ​สั่น"</string>
+    <string name="quickpanel_silent_text">ปิด​เสียง</string>
+    <string name="quickpanel_vibration_text">ระบบ​สั่น</string>
+    <string name="quickpanel_rotation_text">"หมุน
+​อัตโนมัติ"</string>
+    <string name="quickpanel_error_text">ผิดพลาด</string>
+    <string name="quickpanel_dc_text">Data</string>
+    <string name="capital_on">เปิด</string>
+    <string name="capital_off">ปิด</string>
+    <string name="lowbattery">แบตเตอรี่​ต่ำ รี​ชาร์จ​โทรศัพท์​ใน​เร็วๆ นี้​เพื่อ​ใช้​งาน​ต่อ​ไป</string>
+    <string name="critical_lowbattery">แบตเตอรี่​เหลือ​น้อย​มาก ชาร์จ​โทรศัพท์​เดี๋ยว​นี้​เพื่อ​ใช้​งาน​ต่อ​ไป</string>
+    <string name="dischargetitle">ข้อมูล</string>
+    <string name="dischargebattery">หยุด​การ​ชาร์จ อุณหภูมิ​แบตเตอรี่​สูง​หรือ​ต่ำ​เกิน​ไป</string>
+    <string name="fullchargetitle">ข้อมูล</string>
+    <string name="fullchargebattery">"แบตเตอรี่​ชาร์จ​เต็ม​แล้ว
+​ถอด​ชาร์จ​เจอร์"</string>
+</resources>

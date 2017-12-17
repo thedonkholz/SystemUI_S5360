@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">状态栏</string>
+    <string name="status_bar_clear_all_button">清除</string>
+    <string name="status_bar_no_notifications_title">没有通知</string>
+    <string name="status_bar_ongoing_events_title">进行中</string>
+    <string name="status_bar_latest_events_title">通知</string>
+    <string name="battery_low_title">请连接充电器</string>
+    <string name="battery_low_subtitle">电池电量正在降低：</string>
+    <string name="battery_low_percent_format">电量剩余%d%%或更少。</string>
+    <string name="battery_low_why">电池使用</string>
+    <string name="usb_accessory_permission_prompt">Allow the application %1$s to access the USB accessory?</string>
+    <string name="usb_device_confirm_prompt">Open %1$s when this USB device is connected?</string>
+    <string name="usb_accessory_confirm_prompt">Open %1$s when this USB accessory is connected?</string>
+    <string name="usb_accessory_uri_prompt">未安装此 USB 配件适用的应用程序。要了解关于此配件的详情，请访问：%1$s</string>
+    <string name="title_usb_accessory">USB 配件</string>
+    <string name="label_view">查看</string>
+    <string name="always_use_accessory">默认情况下用于该 USB 配件</string>
+    <string name="quickpanel_wifi_text">WiFi</string>
+    <string name="quickpanel_bluetooth_text">蓝牙</string>
+    <string name="quickpanel_gps_text">GPS</string>
+    <string name="quickpanel_sound_text">声音</string>
+    <string name="quickpanel_sound_vibration_text">"声音
+振动"</string>
+    <string name="quickpanel_silent_text">安静</string>
+    <string name="quickpanel_vibration_text">振动</string>
+    <string name="quickpanel_rotation_text">自动旋转</string>
+    <string name="quickpanel_error_text">错误</string>
+    <string name="quickpanel_dc_text">数据</string>
+    <string name="capital_on">开</string>
+    <string name="capital_off">关</string>
+    <string name="lowbattery">电量低。请尽快给手机充电以继续使用</string>
+    <string name="critical_lowbattery">电量严重不足。请现在给手机充电以继续使用</string>
+    <string name="dischargetitle">资料</string>
+    <string name="dischargebattery">已暂停充电。电池温度太高或太低</string>
+    <string name="fullchargetitle">资料</string>
+    <string name="fullchargebattery">"充电完毕。
+请拔除充电器"</string>
+</resources>
