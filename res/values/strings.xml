@@ -42,4 +42,5 @@ Off"</string>
     <string name="fullchargebattery">"Battery fully charged.
 Unplug charger"</string>
     <string name="wifi_in_airplane_mode">In Flight mode</string>
+    <string name="callings">Make a Call</string>
 </resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center_horizontal|bottom"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="4dip"
+		android:layout_gravity="left">
+
+		<ImageView
+			android:id="@+id/contactpicture"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:background="@*android:drawable/ic_contact_picture"
+			android:layout_gravity="center"
+			android:scaleType="fitCenter"
+			android:src="@*android:drawable/ic_contact_picture"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="4dp"
+			android:orientation="vertical"
+			android:paddingLeft="4dp">
+
+			<TextView
+				android:id="@+id/contactname"
+				android:textAppearance="@style/TextAppearance.StatusBar.Title"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:ellipsize="marquee"
+				android:fadingEdge="horizontal"/>
+
+			<TextView
+				android:id="@+id/smstime"
+				android:textAppearance="@*android:style/TextAppearance.StatusBar.EventContent"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:layout_weight="0"
+				android:singleLine="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="8dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:background="@color/carrier_label_text_color"
+		android:paddingBottom="4dp"
+		android:paddingTop="4dp"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:background="@color/carrier_label_text_color"
+		android:paddingBottom="4dp"
+		android:paddingTop="4dp"/>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="center"
+		android:layout_weight="1"
+		android:fillViewport="true"
+		android:minHeight="72dp"
+		android:paddingTop="4dp"
+		android:background="#fff3f3f3"
+		android:paddingBottom="4dp">
+
+		<TextView
+			android:id="@+id/smsmessage"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="72dp"
+			android:autoLink="all"
+			android:gravity="center"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textSize="16sp"
+			android:textColor="?android:attr/textColorPrimaryInverse"
+			android:textColorLink="?android:attr/textColorPrimaryInverse"/>
+
+	</ScrollView>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:background="@color/carrier_label_text_color"
+		android:paddingBottom="4dp"
+		android:paddingTop="4dp"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:background="@color/carrier_label_text_color"
+		android:paddingBottom="4dp"
+		android:paddingTop="4dp"/>
+
+	<Button
+		android:id="@+id/calls_button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		style="?android:attr/buttonStyle"
+		android:layout_gravity="center_vertical"
+		android:text="@string/callings"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dip"
+		android:background="@color/carrier_label_text_color"
+		android:paddingBottom="4dp"
+		android:paddingTop="4dp"/>
+
+</LinearLayout>
+

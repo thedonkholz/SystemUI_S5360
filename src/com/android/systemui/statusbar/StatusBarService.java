@@ -33,6 +33,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.PixelFormat;
 import android.graphics.Rect;
@@ -75,8 +76,10 @@ import java.util.HashMap;
 import java.util.Set;
 
 import com.android.systemui.R;
+import com.android.systemui.sms.SmsPopUI;
 import com.android.systemui.statusbar.policy.StatusBarPolicy;
 import com.android.systemui.statusbar.quickpanel.QuickSettingsView;
+import com.android.systemui.SystemUI;
 
 
 public class StatusBarService extends Service implements CommandQueue.Callbacks {
@@ -177,6 +180,13 @@ public class StatusBarService extends Service implements CommandQueue.Callbacks 
     LinearLayout mMiniCon;
     NotificationData mMiniConData = new NotificationData();
 
+    SystemUI[] mServices;
+    final Object[] SERVICES;
+
+    public StatusBarService() {
+        SERVICES = new Object[]{SmsPopUI.class};
+    }
+
     private class ExpandedDialog extends Dialog {
         ExpandedDialog(Context context) {
             super(context, com.android.internal.R.style.Theme_Light_NoTitleBar);
@@ -246,6 +256,28 @@ public class StatusBarService extends Service implements CommandQueue.Callbacks 
         } else {
             Log.wtf(TAG, "Notification list length mismatch: keys=" + N
                     + " notifications=" + notifications.size());
+        }
+
+		        int NN = SERVICES.length;
+        mServices = new SystemUI[NN];
+        for (int i=0; i<NN; i++) {
+            Class cl = chooseClass(SERVICES[i]);
+            Slog.d(TAG, "loading: " + cl);
+            try {
+                mServices[i] = (SystemUI)cl.newInstance();
+            } catch (IllegalAccessException ex) {
+                throw new RuntimeException(ex);
+            } catch (InstantiationException ex) {
+                throw new RuntimeException(ex);
+            }
+            mServices[i].mDisplay = ((WindowManager) getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay();
+            mServices[i].mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mServices[i].mResources = getResources();
+            mServices[i].mResolver = getContentResolver();
+            mServices[i].mContext = this;
+            Slog.d(TAG, "running: " + mServices[i]);
+
+            mServices[i].start();
         }
 
         // Put up the view
@@ -1218,7 +1250,43 @@ public class StatusBarService extends Service implements CommandQueue.Callbacks 
                 + " " + v.getWidth() + "x" + v.getHeight() + ")";
     }
 
+    private Class chooseClass(Object o) {
+        if (o instanceof Integer) {
+            final String cl = getString((Integer)o);
+            try {
+                return getClassLoader().loadClass(cl);
+            } catch (ClassNotFoundException ex) {
+                throw new RuntimeException(ex);
+            }
+        } else if (o instanceof Class) {
+            return (Class)o;
+        } else {
+            throw new RuntimeException("Unknown system ui service: " + o);
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        for (SystemUI ui: mServices) {
+            ui.onConfigurationChanged(newConfig);
+        }
+    }
+
     protected void dump(FileDescriptor fd, PrintWriter pw, String[] args) {
+		if (args == null || args.length == 0) {
+            for (SystemUI ui: mServices) {
+                pw.println("dumping service: " + ui.getClass().getName());
+                ui.dump(fd, pw, args);
+            }
+        } else {
+            String svc = args[0];
+            for (SystemUI ui: mServices) {
+                String name = ui.getClass().getName();
+                if (name.endsWith(svc)) {
+                    ui.dump(fd, pw, args);
+                }
+            }
+        }
         if (checkCallingOrSelfPermission(android.Manifest.permission.DUMP)
                 != PackageManager.PERMISSION_GRANTED) {
             pw.println("Permission Denial: can't dump StatusBar from from pid="

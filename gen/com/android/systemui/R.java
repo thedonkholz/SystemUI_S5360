@@ -17,12 +17,15 @@ public final class R {
     public static final class bool {
         /**  Control whether status bar should distinguish HSPA data icon form UMTS data icon on devices 
          */
-        public static final int config_hspa_data_distinguishable=0x7f060000;
+        public static final int config_hspa_data_distinguishable=0x7f070000;
+    }
+    public static final class color {
+        public static final int carrier_label_text_color=0x7f060000;
     }
     public static final class dimen {
         /**  Margin at the edge of the screen to ignore touch events for in the windowshade. 
          */
-        public static final int status_bar_edge_ignore=0x7f070000;
+        public static final int status_bar_edge_ignore=0x7f080000;
     }
     public static final class drawable {
         public static final int battery_low_battery=0x7f020000;
@@ -172,99 +175,106 @@ public final class R {
         public static final int title_bar_shadow=0x7f02008d;
     }
     public static final class id {
-        public static final int clear_all_button=0x7f0a001d;
-        public static final int close=0x7f0a0025;
-        public static final int content=0x7f0a0024;
-        public static final int date=0x7f0a0019;
-        public static final int dischargetext=0x7f0a0000;
-        public static final int icons=0x7f0a0013;
-        public static final int image=0x7f0a0005;
-        public static final int latestItems=0x7f0a0022;
-        public static final int latestTitle=0x7f0a0021;
-        public static final int level_percent=0x7f0a0004;
-        public static final int noNotificationsTitle=0x7f0a001e;
-        public static final int notificationIcons=0x7f0a0014;
-        public static final int notificationLinearLayout=0x7f0a001c;
-        public static final int number=0x7f0a0023;
-        public static final int ongoingItems=0x7f0a0020;
-        public static final int ongoingTitle=0x7f0a001f;
-        public static final int padding=0x7f0a0002;
-        public static final int quickpanel_bt_btn_icon=0x7f0a0009;
-        public static final int quickpanel_bt_btn_text=0x7f0a000a;
-        public static final int quickpanel_data_btn_icon=0x7f0a0011;
-        public static final int quickpanel_data_btn_text=0x7f0a0012;
-        public static final int quickpanel_gps_btn_icon=0x7f0a000b;
-        public static final int quickpanel_gps_btn_text=0x7f0a000c;
-        public static final int quickpanel_quick_settings=0x7f0a0006;
-        public static final int quickpanel_rotation_btn_icon=0x7f0a000f;
-        public static final int quickpanel_rotation_btn_text=0x7f0a0010;
-        public static final int quickpanel_sound_btn_icon=0x7f0a000d;
-        public static final int quickpanel_sound_btn_text=0x7f0a000e;
-        public static final int quickpanel_wifi_btn_icon=0x7f0a0007;
-        public static final int quickpanel_wifi_btn_text=0x7f0a0008;
-        public static final int scroll=0x7f0a0001;
-        public static final int statusIcons=0x7f0a0015;
-        public static final int status_bar_call_ongoing_duration=0x7f0a001b;
-        public static final int status_bar_call_ongoing_text=0x7f0a001a;
-        public static final int subtitle=0x7f0a0003;
-        public static final int ticker=0x7f0a0016;
-        public static final int tickerIcon=0x7f0a0017;
-        public static final int tickerText=0x7f0a0018;
+        public static final int calls_button=0x7f0b0017;
+        public static final int clear_all_button=0x7f0b0022;
+        public static final int close=0x7f0b002a;
+        public static final int contactname=0x7f0b0014;
+        public static final int contactpicture=0x7f0b0013;
+        public static final int content=0x7f0b0029;
+        public static final int date=0x7f0b001e;
+        public static final int dischargetext=0x7f0b0000;
+        public static final int icons=0x7f0b0018;
+        public static final int image=0x7f0b0005;
+        public static final int latestItems=0x7f0b0027;
+        public static final int latestTitle=0x7f0b0026;
+        public static final int level_percent=0x7f0b0004;
+        public static final int noNotificationsTitle=0x7f0b0023;
+        public static final int notificationIcons=0x7f0b0019;
+        public static final int notificationLinearLayout=0x7f0b0021;
+        public static final int number=0x7f0b0028;
+        public static final int ongoingItems=0x7f0b0025;
+        public static final int ongoingTitle=0x7f0b0024;
+        public static final int padding=0x7f0b0002;
+        public static final int quickpanel_bt_btn_icon=0x7f0b0009;
+        public static final int quickpanel_bt_btn_text=0x7f0b000a;
+        public static final int quickpanel_data_btn_icon=0x7f0b0011;
+        public static final int quickpanel_data_btn_text=0x7f0b0012;
+        public static final int quickpanel_gps_btn_icon=0x7f0b000b;
+        public static final int quickpanel_gps_btn_text=0x7f0b000c;
+        public static final int quickpanel_quick_settings=0x7f0b0006;
+        public static final int quickpanel_rotation_btn_icon=0x7f0b000f;
+        public static final int quickpanel_rotation_btn_text=0x7f0b0010;
+        public static final int quickpanel_sound_btn_icon=0x7f0b000d;
+        public static final int quickpanel_sound_btn_text=0x7f0b000e;
+        public static final int quickpanel_wifi_btn_icon=0x7f0b0007;
+        public static final int quickpanel_wifi_btn_text=0x7f0b0008;
+        public static final int scroll=0x7f0b0001;
+        public static final int smsmessage=0x7f0b0016;
+        public static final int smstime=0x7f0b0015;
+        public static final int statusIcons=0x7f0b001a;
+        public static final int status_bar_call_ongoing_duration=0x7f0b0020;
+        public static final int status_bar_call_ongoing_text=0x7f0b001f;
+        public static final int subtitle=0x7f0b0003;
+        public static final int ticker=0x7f0b001b;
+        public static final int tickerIcon=0x7f0b001c;
+        public static final int tickerText=0x7f0b001d;
     }
     public static final class layout {
         public static final int battery_discharge=0x7f030000;
         public static final int battery_low=0x7f030001;
         public static final int quickpanel_quick_settings=0x7f030002;
         public static final int quickpanel_quick_settings_for_datamode=0x7f030003;
-        public static final int status_bar=0x7f030004;
-        public static final int status_bar_call_ongoing=0x7f030005;
-        public static final int status_bar_expanded=0x7f030006;
-        public static final int status_bar_icon=0x7f030007;
-        public static final int status_bar_latest_event=0x7f030008;
-        public static final int status_bar_tracking=0x7f030009;
+        public static final int smscall_widget=0x7f030004;
+        public static final int status_bar=0x7f030005;
+        public static final int status_bar_call_ongoing=0x7f030006;
+        public static final int status_bar_expanded=0x7f030007;
+        public static final int status_bar_icon=0x7f030008;
+        public static final int status_bar_latest_event=0x7f030009;
+        public static final int status_bar_tracking=0x7f03000a;
     }
     public static final class string {
-        public static final int always_use_accessory=0x7f08000f;
-        public static final int app_label=0x7f080000;
-        public static final int battery_low_percent_format=0x7f080007;
-        public static final int battery_low_subtitle=0x7f080006;
-        public static final int battery_low_title=0x7f080005;
-        public static final int battery_low_why=0x7f080008;
-        public static final int capital_off=0x7f08001d;
-        public static final int capital_on=0x7f08001c;
-        public static final int critical_lowbattery=0x7f08001f;
-        public static final int dischargebattery=0x7f080021;
-        public static final int dischargetitle=0x7f080020;
-        public static final int fullchargebattery=0x7f080023;
-        public static final int fullchargetitle=0x7f080022;
-        public static final int label_view=0x7f08000e;
-        public static final int lowbattery=0x7f08001e;
-        public static final int quickpanel_bluetooth_text=0x7f080011;
-        public static final int quickpanel_dc_off=0x7f08001b;
-        public static final int quickpanel_dc_on=0x7f08001a;
-        public static final int quickpanel_dc_text=0x7f080019;
-        public static final int quickpanel_error_text=0x7f080018;
-        public static final int quickpanel_gps_text=0x7f080012;
-        public static final int quickpanel_rotation_text=0x7f080017;
-        public static final int quickpanel_silent_text=0x7f080015;
-        public static final int quickpanel_sound_text=0x7f080013;
-        public static final int quickpanel_sound_vibration_text=0x7f080014;
-        public static final int quickpanel_vibration_text=0x7f080016;
-        public static final int quickpanel_wifi_text=0x7f080010;
-        public static final int status_bar_clear_all_button=0x7f080001;
-        public static final int status_bar_latest_events_title=0x7f080004;
-        public static final int status_bar_no_notifications_title=0x7f080002;
-        public static final int status_bar_ongoing_events_title=0x7f080003;
-        public static final int title_usb_accessory=0x7f08000d;
-        public static final int usb_accessory_confirm_prompt=0x7f08000b;
-        public static final int usb_accessory_permission_prompt=0x7f080009;
-        public static final int usb_accessory_uri_prompt=0x7f08000c;
-        public static final int usb_device_confirm_prompt=0x7f08000a;
-        public static final int wifi_in_airplane_mode=0x7f080024;
+        public static final int always_use_accessory=0x7f09000f;
+        public static final int app_label=0x7f090000;
+        public static final int battery_low_percent_format=0x7f090007;
+        public static final int battery_low_subtitle=0x7f090006;
+        public static final int battery_low_title=0x7f090005;
+        public static final int battery_low_why=0x7f090008;
+        public static final int callings=0x7f090025;
+        public static final int capital_off=0x7f09001d;
+        public static final int capital_on=0x7f09001c;
+        public static final int critical_lowbattery=0x7f09001f;
+        public static final int dischargebattery=0x7f090021;
+        public static final int dischargetitle=0x7f090020;
+        public static final int fullchargebattery=0x7f090023;
+        public static final int fullchargetitle=0x7f090022;
+        public static final int label_view=0x7f09000e;
+        public static final int lowbattery=0x7f09001e;
+        public static final int quickpanel_bluetooth_text=0x7f090011;
+        public static final int quickpanel_dc_off=0x7f09001b;
+        public static final int quickpanel_dc_on=0x7f09001a;
+        public static final int quickpanel_dc_text=0x7f090019;
+        public static final int quickpanel_error_text=0x7f090018;
+        public static final int quickpanel_gps_text=0x7f090012;
+        public static final int quickpanel_rotation_text=0x7f090017;
+        public static final int quickpanel_silent_text=0x7f090015;
+        public static final int quickpanel_sound_text=0x7f090013;
+        public static final int quickpanel_sound_vibration_text=0x7f090014;
+        public static final int quickpanel_vibration_text=0x7f090016;
+        public static final int quickpanel_wifi_text=0x7f090010;
+        public static final int status_bar_clear_all_button=0x7f090001;
+        public static final int status_bar_latest_events_title=0x7f090004;
+        public static final int status_bar_no_notifications_title=0x7f090002;
+        public static final int status_bar_ongoing_events_title=0x7f090003;
+        public static final int title_usb_accessory=0x7f09000d;
+        public static final int usb_accessory_confirm_prompt=0x7f09000b;
+        public static final int usb_accessory_permission_prompt=0x7f090009;
+        public static final int usb_accessory_uri_prompt=0x7f09000c;
+        public static final int usb_device_confirm_prompt=0x7f09000a;
+        public static final int wifi_in_airplane_mode=0x7f090024;
     }
     public static final class style {
-        public static final int TextAppearance_StatusBar_IntruderAlert=0x7f090001;
-        public static final int TextAppearance_StatusBar_Title=0x7f090000;
+        public static final int TextAppearance_StatusBar_IntruderAlert=0x7f0a0001;
+        public static final int TextAppearance_StatusBar_Title=0x7f0a0000;
     }
     public static final class xml {
         public static final int bookmarks=0x7f050000;
